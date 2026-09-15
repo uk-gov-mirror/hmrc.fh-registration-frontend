@@ -28,17 +28,8 @@
 
 
 @typeNotListed = {
-    <details class="govuk-details" data-module="govuk-details">
-        <summary class="govuk-details__summary">
-            <span class="govuk-details__summary-text">
-            @Messages("fh.business_type.summary")
-            </span>
-        </summary>
-        <div class="govuk-details__text">
-            <p>@Messages("fh.business_type.details1")</p>
-            <p><a class="govuk-link" href="@Messages("link.guidance_page")" target="_blank">@Messages("fh.business_type.detailsLinkText")</a> @Messages("fh.business_type.details2")</p>
-        </div>
-    </details>
+            <p class="govuk-body">@Messages("fh.business_type.details1")</p>
+            <p class="govuk-body"><a class="govuk-link" href="@Messages("link.guidance_page")" target="_blank">@Messages("fh.business_type.detailsLinkText")</a> @Messages("fh.business_type.details2")</p>
 }
 
 
@@ -64,14 +55,17 @@
     }
 
     @viewHelpers.form(action = uk.gov.hmrc.fhregistrationfrontend.controllers.routes.Application.submitBusinessType, Symbol("novalidate") -> "novalidate") {
-
+        <h1 class="govuk-heading-l govuk-!-margin-bottom-6">
+            @Messages("fh.business_type.title")
+        </h1>
+        @typeNotListed
         @viewHelpers.govUkRadios(
             Radios(
                 fieldset = Some(Fieldset(
                     legend = Some(Legend(
                         content = Text(Messages("fh.business_type.title")),
-                        classes = "govuk-fieldset__legend--l",
-                        isPageHeading = true
+                        classes = "govuk-visually-hidden",
+                        isPageHeading = false
                     ))
                 )),
                 idPrefix = Some("businessType"),
@@ -95,8 +89,6 @@
                 )
             ).withFormField(businessTypeForm("businessType"))
         )
-
-        @typeNotListed
 
         @viewHelpers.govukButton(Button(
             content = Text(Messages("button.save.continue"))

@@ -180,7 +180,6 @@ fh.business_type.limited_company=Limited company
 fh.business_type.sole_trader=Sole trader
 fh.business_type.business_partnership=Ordinary business partnership
 fh.business_type.type_not_match=Your Government Gateway ID does not match the business type you have selected
-fh.business_type.summary=My business type is not listed here
 fh.business_type.details1=You can only apply online for a limited company, sole trader or ordinary business partnership.
 fh.business_type.detailsLinkText=Check the guidance (opens in a new tab)
 fh.business_type.details2= on how to apply for the Fulfilment House Due Diligence Scheme as a different type of business, such as a limited liability partnership or an unincorporated body.
@@ -550,7 +549,6 @@ fh.companyRegistrationNumber.label=What is the company registration number of th
 fh.companyRegistrationNumber.hint_text=For example, 01234567 or SC123456
 fh.companyRegistrationNumber.error.required=Enter the company registration number
 fh.companyRegistrationNumber.error.pattern=Company registration number must be 8 numbers, or 2 letters followed by 6 numbers
-fh.companyRegistrationNumber.summary=Where to find your company registration number
 fh.companyRegistrationNumber.details=You can find your company registration number on your Certificate of Incorporation, on official letters from HMRC or you can
 fh.companyRegistrationNumber.details_companies_house=search the Companies House register (opens in a new window or tab)
 
@@ -575,7 +573,6 @@ fh.dateOfIncorporation.year.missing=Enter the year of incorporation
 fh.dateOfIncorporation.day-and-month.missing=Enter the day and month of incorporation
 fh.dateOfIncorporation.month-and-year.missing=Enter the month and year of incorporation
 fh.dateOfIncorporation.day-and-year.missing=Enter the day and year of incorporation
-fh.dateOfIncorporation.summary=Where to find the date of incorporation
 fh.dateOfIncorporation.details=You can find this date on the company’s Certificate of Incorporation, or
 fh.dateOfIncorporation.companies_house=search the Companies House register (opens in a new window or tab)
 
